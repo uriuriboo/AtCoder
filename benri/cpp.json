@@ -1,0 +1,58 @@
+{"atcodertemplate": {
+    "prefix": "tmplt",
+    "body":[
+"#include <bits/stdc++.h>",
+"using namespace std;",
+"#define rep(i, n) for (int i = 0; i < (n); i++)",
+"#define rep2(i,k,n) for(int i = k;i < (n);i++)",
+"typedef long long ll;",
+"typedef pair <int,int> P;",
+"typedef vector<vector<int>> Graph;",
+"const ll MOD = 1e9 + 7;",
+"const int INF = 1e8;",
+"const int dx[4] = {1, 0, -1, 0};",
+"const int dy[4] = {0, 1, 0, -1};\n",
+
+"template <class T>",
+"inline T LCM(T a, T b) {",
+"\t return (a * b) / GCD(a, b);",
+"}",
+"template <class T>",
+"inline bool chmin(T &a, T b) {",
+"\tif (a > b) {",
+		"\ta = b;",
+		"\treturn true;",
+	"\t}",
+	"\treturn false;",
+"}\n",
+"template <class T>",
+"inline bool chmax(T &a, T b) {",
+	"\t\tif (a < b) {",
+		"\t\t\ta = b;",
+		"\t\t\treturn true;",
+	"\t\t}",
+	"\treturn false;",
+"}\n",
+"template <class T>",
+"T GCD(T a, T b) {",
+	"\tif (b == 0)",
+		"\t\treturn a;",
+	"\telse",
+		"\t\treturn GCD(b, a % b);",
+"}\n",
+
+
+"int main(void){\n",
+    "\tint n,m,ans = 0;",
+    "\tcin >> n >> m;\n",
+
+    "\trep(i, m){\n",
+        
+    "\t}\n",
+
+    "\treturn 0;",
+"}"
+    ],
+    "description": "競プロのテンプレート"
+}
+}
