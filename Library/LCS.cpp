@@ -1,14 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define rep(i, n) for (int i = 0; i < (n); i++)
-#define rep2(i,k,n) for(int i = k;i < (n);i++)
-typedef long long ll;
-typedef pair <int,int> P;
-typedef vector<vector<int>> Graph;
-const ll MOD = 1e9 + 7;
-const int INF = 1e8;
-const int dx[4] = {1, 0, -1, 0};
-const int dy[4] = {0, 1, 0, -1};
+
 
 int lcs(string A,string B){
     int a = A.size(),b = B.size();
