@@ -6,7 +6,8 @@ typedef long long ll;
 typedef pair <int,int> P;
 typedef vector<vector<int>> Graph;
 const ll MOD = 1e9 + 7;
-const int INF = 1e8;
+const int inf = 1e9;
+const ll INF = 1e18;
 const int dx[4] = {1, 0, -1, 0};
 const int dy[4] = {0, 1, 0, -1};
 
@@ -17,18 +18,18 @@ inline T LCM(T a, T b) {
 template <class T>
 inline bool chmin(T &a, T b) {
 	if (a > b) {
-	a = b;
-	return true;
+		a = b;
+		return true;
 	}
 	return false;
 }
 
 template <class T>
 inline bool chmax(T &a, T b) {
-		if (a < b) {
-			a = b;
-			return true;
-		}
+	if (a < b) {
+		a = b;
+		return true;
+	}
 	return false;
 }
 
