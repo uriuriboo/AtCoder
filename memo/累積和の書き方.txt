@@ -1,0 +1,8 @@
+vector<int> a(n);
+vector<int> cm(n,0);
+cm[i] はi以降の累積和
+for(int i = n-2;i >= 0;i--){
+    cm[i] = c[i+1] + a[i];
+}
+
+//cm[i]*a[i]でよく使う
