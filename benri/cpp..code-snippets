@@ -1,0 +1,74 @@
+{"atcodertemplate": {
+    "prefix": "atmplt",
+    "body":[
+"#include <bits/stdc++.h>",
+"using namespace std;",
+"#define rep(i, n) for (int i = 0; i < (n); i++)",
+"#define rep2(i,k,n) for(int i = k;i < (n);i++)",
+"typedef long long ll;",
+"typedef pair <int,int> P;",
+"typedef vector<vector<int>> Graph;",
+"const ll MOD = 1e9 + 7;",
+"const int INF = 1e9;",
+"const ll lINF = 1e18;",
+"const int dx[4] = {1, 0, -1, 0};",
+"const int dy[4] = {0, 1, 0, -1};\n",
+
+"template <class T>",
+"inline T LCM(T a, T b) {",
+"\t return (a * b) / GCD(a, b);",
+"}",
+"template <class T>",
+"inline bool chmin(T &a, T b) {",
+"\tif (a > b) {",
+		"\t\ta = b;",
+		"\t\treturn true;",
+	"\t}",
+	"\treturn false;",
+"}\n",
+"template <class T>",
+"inline bool chmax(T &a, T b) {",
+	"\tif (a < b) {",
+		"\t\ta = b;",
+		"\t\treturn true;",
+	"\t}",
+	"\treturn false;",
+"}\n",
+"template <class T>",
+"T GCD(T a, T b) {",
+	"\tif (b == 0)",
+		"\t\treturn a;",
+	"\telse",
+		"\t\treturn GCD(b, a % b);",
+"}\n",
+"template <class T>",
+"T nCr_naive(T n, int r) {",
+  "\tT ret(1);",
+  "\tfor (int i = 0; i < r; i++) {",
+	"\t\tret *= n;",
+    "\t\tret /= T(i + 1);",
+    "\t\tn -= T(1);",
+  "\t}",
+  "\treturn ret;",
+"}\n",
+
+"int main(void){",
+    "\tint n,m,ans = 0;",
+    "\tcin >> n >> m;",
+    "\tvector<int> a(n);",
+    "\trep(i, n) cin >> a[i];\n\n",
+    
+
+    "\treturn 0;",
+"}"
+    ],
+    "description": "競プロのテンプレート"
+  },
+
+  "vector<int>":{
+    "prefix": "vi",
+    "body": "vector<int> ",
+    "description": "vector<int>の省略"
+  }
+  
+}
