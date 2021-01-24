@@ -14,7 +14,6 @@
 "const int dx[4] = {1, 0, -1, 0};",
 "const int dy[4] = {0, 1, 0, -1};\n",
 
-
 "template <class T>",
 "inline bool chmin(T &a, T b) {",
 "\tif (a > b) {",
@@ -97,10 +96,23 @@
     "description": "競プロの簡素テンプレート"
   },
 
-  "vector<int>":{
+  "vector<int>略":{
     "prefix": "vi",
     "body": "vector<int> ",
     "description": "vector<int>の省略"
   },
+  
+  "Yes 出力":{
+    "prefix": "cYe",
+    "body": "cout << \"Yes\" << endl;",
+    "description": "Yesの出力"
+  },
+
+  "No 出力":{
+    "prefix": "cNo",
+    "body": "cout << \"No\" << endl;",
+    "description": "Noの出力"
+  },
+
   
 }
