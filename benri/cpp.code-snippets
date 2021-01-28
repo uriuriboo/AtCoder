@@ -313,8 +313,20 @@
     ],
     "description": "最長共通部分列",
   },
-  "累積和の計算": {
-    "prefix": "cumsum",
+  "累積和の計算(前から足す)": {
+    "prefix": "cumsump",
+    "body": [
+      "vector<int> a(n);",
+      "vector<int> cm(n+1,0);",
+      "//cm[i] はi以降の累積和",
+      "rep(i,n){",
+      "\tcm[i+1] = cm[i] + a[i];",
+      "}",
+    ],
+    "description": "累積和の計算式",
+  },
+  "累積和の計算(後ろから)": {
+    "prefix": "cumsumb",
     "body": [
       "vector<int> a(n);",
       "vector<int> cm(n,0);",
