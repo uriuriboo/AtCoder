@@ -7,7 +7,7 @@ using namespace std;
 負の数は扱わない
 */
 
-//string 型で返すためconvert_base.c_str()で変換する方の関数に渡す
+//string 型で返すためconvert_base.c_str()で変換する型の関数に渡す
 
 template <typename T>
 string convert_base(T x,T y){
