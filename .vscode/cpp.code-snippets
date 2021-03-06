@@ -122,13 +122,28 @@
   },
   "vector<int>略": {
     "prefix": "vi",
-    "body": "vector<int> ",
+    "body": "vector<int> $1;\n",
     "description": "vector<int>の省略"
+  },
+  "vector<ll>略": {
+    "prefix": "vl",
+    "body": "vector<ll> $1;\n",
+    "description": "vector<ll>の省略"
   },
   "vector<string>略":{
     "prefix": "vs",
-    "body": "vector<string> ",
+    "body": "vector<string> $1;\n",
     "description": "vector<string>の省略"
+  },
+  "map<int,int>略":{
+    "prefix": "mpii",
+    "body": "map<int,int> $1;\n",
+    "description": "map<int,int>略の省略"
+  },
+  "出力改行":{
+    "prefix": "cen",
+    "body": "cout << $1 << endl;\n",
+    "description": "出力と改行を行う"
   },
   "ans 出力": {
     "prefix": "cans",
@@ -289,6 +304,37 @@
       "}",
     ],
     "description": "Gridグラフでの幅優先探索",
+  },
+  "dijkstra": {
+    "prefix": "fdijk",
+    "body": [
+      "using TU = tuple<int,ll>;",
+      "using Graph = vector<vector<TU>>;\n",
+      "//s,Gは0オリジンに直しておくこと",
+      "vector<ll> dijkstra(int s,Graph &G){",
+      "\tint n = G.size();",
+      "\tvector<ll> dist(n,lINF);",
+      "\tdist[s] = 0;\n",
+      "\tpriority_queue<pair<ll,int>,vector<pair<ll,int>>,greater<pair<ll,int>>> que;",
+      "\tque.push(make_pair(dist[s],s));\n",
+      "\twhile(!que.empty()){",
+      "\t\tint v;",
+      "\t\tll d;",
+      "\t\ttie(d,v) = que.top();",
+      "\t\tque.pop();\n",
+      "\t\tif(d > dist[v]) continue;",
+      "\t\tfor(auto nxt:G[v]){",
+      "\t\t\tint nv;",
+      "\t\t\tll w;",
+      "\t\t\ttie(nv,w) = nxt;",
+      "\t\t\tif(chmin(dist[nv],dist[v]+w))",
+      "\t\t\t\tque.push(make_pair(dist[nv], nv));",
+      "\t\t}",
+      "\t}",
+      "\treturn dist;",
+      "}",
+    ],
+    "description": "ダイクストラ法の関数"
   },
   "isPrime": {
     "prefix": "isP",
