@@ -135,6 +135,11 @@
     "body": "vector<string> $1;\n",
     "description": "vector<string>の省略"
   },
+  "vector<vector<T>> ":{
+    "prefix": "vv",
+    "body": "vector<vector<$1>> $2($3,vector<$1>($4));\n",
+    "description": "二次元配列",
+  },
   "map<int,int>略":{
     "prefix": "mpii",
     "body": "map<int,int> $1;\n",
