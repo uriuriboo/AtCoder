@@ -7,7 +7,7 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "jupyter.sendSelectionToInteractiveWindow": false,
     "files.autoSave": "off",
-    "python.defaultInterpreterPath": "\"C:\\Users\\\\anaconda3\\python.exe\"",
+    "python.defaultInterpreterPath": "\"C:\\Users\\USERNAME\\anaconda3\\python.exe\"",
     "git.ignoreMissingGitWarning": true,
     
     /*"rust-client.useWSL": true,
