@@ -453,4 +453,26 @@
     ],
     "description": "bit探索"
   },
+  "めぐり式二分探索":{
+    "prefix": "binse",
+    "body": [
+      "bool P(int x) {\n",
+
+      "}\n",
+      
+      "// P(x) = true となる最小の整数 x を返す",
+      "int binary_search(int l,int r) {",
+          "\t// P(left) = False, P(right) = True となるように",
+          "\tint left, right; \n",
+          
+          "\twhile (right - left > 1) {",
+              "\t\tint mid = left + (right - left) / 2;",
+              "\t\tif (P(mid)) right = mid;",
+              "\t\telse left = mid;",
+          "\t}",
+          "\treturn right;",
+      "}\n",
+    ],
+    "description": "めぐり式二分探索"
+  }
 }
